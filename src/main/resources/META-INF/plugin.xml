@@ -1,0 +1,21 @@
+<idea-plugin>
+    <id>de.fdamken.oss.pycharm-sacred-plugin</id>
+    <name>Sacred Support</name>
+    <vendor email="fabian.damken@frisp.org" url="https://www.github.com/fdamken/pycharm-sacred-plugin">GitHub</vendor>
+
+    <description>This plugin adds support of the Sacred experiment manager for Python projects to PyCharm.</description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.modules.python</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
