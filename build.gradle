@@ -14,12 +14,15 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib"
 }
 
-// See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
     version '2020.2'
+    type 'PY'
+
+    plugins 'Pythonid'
 }
+
 patchPluginXml {
     changeNotes """
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>"""
+        No changes yet.
+    """
 }

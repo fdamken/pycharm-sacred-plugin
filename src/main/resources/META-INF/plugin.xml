@@ -5,17 +5,19 @@
 
     <description>This plugin adds support of the Sacred experiment manager for Python projects to PyCharm.</description>
 
-    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
-         on how to target different products -->
     <depends>com.intellij.modules.platform</depends>
     <depends>com.intellij.modules.lang</depends>
     <depends>com.intellij.modules.python</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <!-- Add your extensions here -->
+        <localInspection language="Python"
+                         displayName="Sacred ingredients capture."
+                         groupPath="Python"
+                         groupBundle="messages.SacredBundle"
+                         groupKey="group.names.sacred"
+                         enabledByDefault="true"
+                         level="INFORMATION"
+                         implementationClass="de.fdamken.oss.pycharmsacredplugin.SacredCaptureInspection"/>
+        <postStartupActivity implementation="de.fdamken.oss.pycharmsacredplugin.BootstrapActivity"/>
     </extensions>
-
-    <actions>
-        <!-- Add your actions here -->
-    </actions>
 </idea-plugin>
